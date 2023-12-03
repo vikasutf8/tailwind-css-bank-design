@@ -134,7 +134,88 @@
                 </div>
             </div>
         </section>
+<!-- 59:00 img dotdot line -->
+        <section id="how-it-works" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2  ">
+                    <h4 class="text-color-secondary font-bold mb-4 ">How IT Work</h4>
+                    <h1 class="title">Grow Up your Money Saving</h1>
+                </div>
+                <div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                    <!-- card 1 -->
+                    <div class="text-center cursor-pointer">
+                        <div class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-xl cursor-pointer hover:bg-color-secondary ease-in duration-100">
+                            <p class="text-6xl">1</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Install the App</h3>
+                        <p class="leading-relaxed"> We use an application design a testing gnose to keep away</p>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="text-center cursor-pointer">
+                        <div class="relative inline-block px-6 py-3 rounded-xl cursor-pointer bg-color-secondary ">
+                            <p class="text-6xl">2</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Setup your Profile</h3>
+                        <p class="leading-relaxed"> We use an application design a testing gnose to keep away</p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="text-center cursor-pointer">
+                        <div class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-xl cursor-pointer hover:bg-color-secondary ease-in duration-100">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Enjoy your Feature</h3>
+                        <p class="leading-relaxed"> We use an application design a testing gnose to keep away</p>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+
+        <section id="Testimonial">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2  ">
+                    <h4 class="text-color-secondary font-bold mb-4 ">User Review</h4>
+                    <h1 class="title">What Client Say About Our App After Use It</h1>
+                </div>
+                <!-- review container -->
+                <div class="mt-5 ">
+                    <div class="flex items-center justify-center flex-wrap">
+                        <img src="/user1.jpg" alt="user1" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic" onclick="showReview()">
+                        <img src="/214654.jpg" alt="user2" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                        <img src="/user1.jpg" alt="user3" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                        <img src="/user1.jpg" alt="user4" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                        <img src="/user1.jpg" alt="user5" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
+                    </div>
+                    <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+                       <div class="user-text active-text">
+                        <p class="md:text-2xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti a dolor et facilis, explicabo ut eveniet accusantium laboriosam, necessitatibus quo incidunt vel esse, saepe debitis? Architecto repellendus voluptas hic dolores?</p>
+                        <h4 class="font-bold text-color-secondary mb-1">viaks Arya</h4>
+                        <p>software developer</p>
+                       </div>
+                       <div class="user-text">
+                        <p class="md:text-2xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti a dolor et facilis, explicabo ut eveniet accusantium laboriosam, necessitatibus quo incidunt vel esse, saepe debitis? Architecto repellendus voluptas hic dolores?</p>
+                        <h4 class="font-bold text-color-secondary mb-1">viaks Arya</h4>
+                        <p>Web developer</p>
+                       </div>
+                       <div class="user-text">
+                        <p class="md:text-2xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti a dolor et facilis, explicabo ut eveniet accusantium laboriosam, necessitatibus quo incidunt vel esse, saepe debitis? Architecto repellendus voluptas hic dolores?</p>
+                        <h4 class="font-bold text-color-secondary mb-1">vjaut jeo</h4>
+                        <p>Web tester</p>
+                       </div>
+                       <div class="user-text">
+                        <p class="md:text-2xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti a dolor et facilis, explicabo ut eveniet accusantium laboriosam, necessitatibus quo incidunt vel esse, saepe debitis? Architecto repellendus voluptas hic dolores?</p>
+                        <h4 class="font-bold text-color-secondary mb-1">robert tiwar</h4>
+                        <p>App developer</p>
+                       </div>
+                       <div class="user-text">
+                        <p class="md:text-2xl mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti a dolor et facilis, explicabo ut eveniet accusantium laboriosam, necessitati</p>
+                        <h4 class="font-bold text-color-secondary mb-1">toppo Arya</h4>
+                        <p>figma developer</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -147,7 +228,7 @@
         // mobile view
         const hamburger =document.querySelector('#hamburger')
         const menu =document.querySelector('#menu')
-        const hLink =document.querySelector('#hLink')
+        const hLink =document.querySelectorAll('#hLink')
         const faSolid =document.querySelector(".fa-solid")
 
         hamburger.addEventListener("click",()=>{
@@ -161,6 +242,25 @@
                 faSolid.classList.toggle('fa-xmark')
             })
         })
+
+
+        // testmoinal
+        const userTexts =document.getElementsByClassName("user-text")
+        const userPics =document.getElementsByClassName("user-pic")
+
+        function showReview(){
+            for(userPic of userPics){
+                userPic.classList.remove("active-pic")
+            }
+            for(userText of userTexts){
+                userText.classList.remove('active-text')
+            }
+            let i =Array.from(userPics).indexOf(event.target)
+
+            userPics[i].classList.add('active-pic')
+            userTexts[i].classList.add('active-text')
+
+        }
 
     </script>
 </body>
